@@ -1,0 +1,54 @@
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* @import url(); */
+@theme {
+  --default-font-family: "barlow semi condensed", sans-serif;
+
+  /* ### Primary */
+
+  --color-Purple-50: hsl(260, 100%, 95%);
+  --color-Purple-300: hsl(264, 82%, 80%);
+  --color-Purple-500: hsl(263, 55%, 52%);
+
+  /* ### Neutral */
+
+  --color-White: hsl(0, 0%, 100%);
+  --color-Grey-100: hsl(214, 17%, 92%);
+  --color-Grey-200: hsl(0, 0%, 81%);
+  --color-Grey-400: hsl(224, 10%, 45%);
+  --color-Grey-500: hsl(217, 19%, 35%);
+  --color-Dark-blue: hsl(219, 29%, 14%);
+  --color-Black: hsl(0, 0%, 7%);
+
+  /* ### Text Sizes */
+  /* heading */
+  --text-heading: 19px;
+  --font-weight-heading: 700;
+  --leading-heading: 135%;
+  /* base text */
+  --text-base: 13px;
+  --font-weight-text: 400;
+  --leading-base: 140%;
+  /* text details */
+  --text-details: 13px;
+  --font-weight-details: 300;
+}
+
+@layer components {
+  .base-text {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-base);
+    line-height: var(--leading-base);
+  }
+  .heading-text {
+    font-size: var(--text-heading);
+    font-weight: var(--font-weight-heading);
+    line-height: var(--leading-heading);
+  }
+  .details-text {
+    font-size: var(--text-details);
+    font-weight: var(--font-weight-details);
+    line-height: var(--leading-details);
+  }
+}
