@@ -51,4 +51,9 @@
     font-weight: var(--font-weight-details);
     line-height: var(--leading-details);
   }
+  .block-quote {
+    color: black;
+    /* background-color: brown; */
+    /* display: flex; */
+  }
 }
